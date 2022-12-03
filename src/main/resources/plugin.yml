@@ -1,0 +1,12 @@
+name: LPprefixes
+version: '${project.version}'
+main: lpprefixes.lpprefixes.LPprefixes
+load: STARTUP
+depend: [ TAB, LuckPerms, Chatty ]
+authors: [ Link_play ]
+description: Prefix plugin by Link_play
+commands:
+  lpprefixes:
+    aliases: [ lpp ]
+  prefix:
+    aliases: [ pref ]

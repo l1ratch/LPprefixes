@@ -1,0 +1,56 @@
+# Плагин на префиксы!  Версия плагина 3.0
+# Написал: Link_play (vk.com/l1nkplay)
+# Работает только с плагинами: LuckPerms, Chatty, TAB или TAB premium
+#
+# Команды:
+#  Команды админа:
+#   /LPprefixes help - Помощь по плагину - LPprefixes.admin
+#   /LPprefixes reload - Перезагрузить конфиг - LPprefixes.admin
+#   /LPprefixes on <all|tab|chat> - Включить ветку команды /prefix <all|tab|chat> - LPprefixes.admin
+#   /LPprefixes off <all|tab|chat> - Включить ветку команд /prefix <all|tab|chat> - LPprefixes.admin
+#  Команды игрока:
+#   /prefix help - Помощь по командам
+#   /prefix all set - Установить префикс везде - LPprefixes.all
+#   /prefix all clear - Восстановить начальный префикс везде - LPprefixes.all
+#   /prefix tab set - Установить префикс в табе - LPprefixes.tab
+#   /prefix tab clear - Восстановить начальный префикс в табе - LPprefixes.tab
+#   /prefix chat set - Установить префикс в чате - LPprefixes.chat
+#   /prefix chat clear - Восстановить начальный префикс в чате - LPprefixes.chat
+#
+#  --> Распростронение данного плагина запрещено без разрешения создателя! <--
+
+prefix: #prefix all (Право: LPprefixes.all)
+  Allow: true
+  clear: '&a&lВы вернули стандартный префикс!'
+  set: '&a&lВы установили новый префикс!'
+
+tabprefix: #prefix tab (Право: LPprefixes.tab)
+  Allow: true
+  clear: '&a&lВы вернули стандартный префикс в табе!'
+  set: '&a&lВы установили новый префикс в табе!'
+
+chatprefix: #prefix chat (Право: LPprefixes.chat)
+  Allow: true
+  clear: '&a&lВы вернули стандартный префикс в чате!'
+  set: '&a&lВы установили новый префикс в чате!'
+
+no-perms: '&c&lУ вас нет прав для установки префикса или данная команда отключена!'
+no-args: '&cАргументы не найдены! &6/prefix help &8- &fПомощь по плагину'
+
+helps: #Текст при выполнении команды /LPprefixes help - для администрации!
+  - "§aПлагин LPprefixes! §bСоздатель: vk.com/l1nkplay"
+  - "§cКоманды:"
+  - "§6/LPprefixes <reload|help> §8- §fПерезагрузка конфига|Помощь по командам §8- §bLPprefixes.Admin"
+  - "§6/LPprefixes on <all|tab|chat> §8- §fВключить ветку команды /prefix <all|tab|chat> §8- §bLPprefixes.Admin"
+  - "§6/LPprefixes off <all|tab|chat> §8- §fВыключить ветку команды /prefix <all|tab|chat> §8- §bLPprefixes.Admin"
+
+help: #Текст при выполнении команды /prefix help - для игрока!
+  - "§cКоманды:"
+  - "§6/prefix all set §8- §fУстановить префикс везде"
+  - "§6/prefix all clear §8- §fВосстановить начальный префикс везде"
+  - "§6/prefix tab set §8- §fУстановить префикс в табе"
+  - "§6/prefix tab clear §8- §fВосстановить начальный префикс в табе"
+  - "§6/prefix chat set §8- §fУстановить префикс в чате"
+  - "§6/prefix chat clear §8- §fВосстановить начальный префикс в чате"
+
+no-permsReload: '&c&lУ вас нет прав для использования этой команды!'
